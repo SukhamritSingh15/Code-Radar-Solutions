@@ -3,8 +3,8 @@
 
 
 int main() {
-    double a;
-    scanf("%lf",&a);
-    printf("You entered: %.4flf\n",a);
+    float a;
+    scanf("%f",&a);
+    printf("You entered: %.4ff\n",a);
     return 0;
 }
