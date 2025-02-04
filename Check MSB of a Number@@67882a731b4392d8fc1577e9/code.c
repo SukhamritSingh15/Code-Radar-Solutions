@@ -3,11 +3,11 @@
 int main() {
     int a;
     scanf("%d",&a);
-    if (1&&(a>>1)){
-        printf("Not Set");
+    if (1&(a>>1)){
+        printf("Set");
     }
     else{
-        printf("Set");
+        printf("Not Set");
     }
     return 0;
 }
