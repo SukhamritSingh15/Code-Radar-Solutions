@@ -3,9 +3,9 @@
 
 
 int main() {
-    float a;
+    float radius;
     // const float pie=3.14;
-    scanf("%f",&a);
-    printf("Area : %.2f",3.14*a*a);
+    scanf("%f",&radius);
+    printf("Area : %.2f",3.14*radius*radius);
     return 0;
 }
