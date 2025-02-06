@@ -4,7 +4,7 @@
 int main() {
     int a,b;
     scanf("%d",&a,&b);
-    if(a==pow(b)){
+    if(b*b==a){
         printf("Yes");
     }
     else{
