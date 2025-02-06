@@ -11,7 +11,7 @@ int main(){
     else if((ch>='a'&& ch<='z')||(ch>='A' && ch>='Z')){
         printf("Consonants");
     }
-    }else{
+    else{
         printf("Special Character");
     }
     return 0;
