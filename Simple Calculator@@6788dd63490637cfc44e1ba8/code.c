@@ -1,33 +1,28 @@
 #include <stdio.h>
-
 int main(){
     int a,b;
-    char sign;
-    scanf("%d%d%c",&a,&b,&sign);
-    switch(sign){
+    char ch;
+    scanf("%d\n", &a);
+    scanf("%d\n", &b);
+    scanf(" %c\n", &ch);
+    switch(ch){
         case '+':
         printf("%d\n",a+b);
         break;
-
         case '-':
         printf("%d\n",a-b);
         break;
-
         case '*':
         printf("%d\n",a*b);
         break;
-
         case '/':
-        if(b!=0){
+        if (b!=0){
             printf("%d\n",a/b);
-        }
-        else{
+        }else{
             printf("error\n");
         }
         break;
-        
         default:
         printf("error:invalid operator");
-    }
-    return 0;
+    }return 0;
 }
