@@ -33,7 +33,7 @@ int main() {
         break;
 
         case '8':
-        printf("31");
+        printf("30");
         break;
 
         case '9':
