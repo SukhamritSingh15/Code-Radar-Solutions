@@ -11,6 +11,7 @@ int main() {
     for(int i=2;i<a;i++){
         if(i%n==0){
             printf("Not Prime");
+            return 0;
         }
     }
     printf("Prime");
