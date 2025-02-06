@@ -9,7 +9,7 @@ int main() {
         return 0;
     }
     for(int i=2;i<a;i++){
-        if(n%i==0){
+        if(a%i==0){
             printf("Not Prime");
             return 0;
         }
