@@ -4,20 +4,22 @@ int main(){
     int a,b;
     char sign;
     scanf("%d%d%c",&a,&b,&sign);
-    if(sign=='+'){
+    switch(sign){
+        case '+':
         printf("%d",a+b);
-    }
-    else if(sign=='-'){
+        break;
+
+        case '-':
         printf("%d",a-b);
-    }
-    else if(sign=='*'){
+        break;
+
+        case '*':
         printf("%d",a*b);
-    }
-    else if(sign=='/'){
+        break;
+
+        case '/':
         printf("%d",a/b);
-    }
-    else{
-        printf("error");
+        break;
     }
     return 0;
 }
