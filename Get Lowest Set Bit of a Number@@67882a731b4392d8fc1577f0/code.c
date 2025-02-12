@@ -5,7 +5,7 @@ int main(){
     if(a==0){
         printf("-1");
     }
-    while((a==0) & 1){
+    while((a==0) == 1){
         a>>=1;
         pos++;
     }
