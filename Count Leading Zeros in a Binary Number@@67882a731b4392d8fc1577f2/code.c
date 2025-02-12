@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int a,count = 0;
-    scanf("%",&a);
+    scanf("%d",&a);
     if(a==0){
         printf("32");
         return 0;
