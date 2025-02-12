@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
-    int a,count = 0;
-    scanf("%d",&a);
+    unsigned int a,count = 0;
+    scanf("%lu",&a);
     if(a==0){
         printf("32");
     }
