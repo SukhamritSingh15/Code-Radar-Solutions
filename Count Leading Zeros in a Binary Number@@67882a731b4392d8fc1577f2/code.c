@@ -5,10 +5,10 @@ int main(){
     if(a==0){
         printf("32");
     }
-    while(num>0){
+    while(a>0){
         count++;
-        num>>=1;
+        a>>=1;
     }
-    printf("%d",num);
+    printf("%d",a);
     return 0;
 }
