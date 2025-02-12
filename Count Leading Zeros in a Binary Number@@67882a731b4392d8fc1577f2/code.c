@@ -1,9 +1,10 @@
 #include <stdio.h>
 int main(){
-    unsigned int a,count = 0;
-    scanf("%lu",&a);
+    int a,count = 0;
+    scanf("%",&a);
     if(a==0){
         printf("32");
+        return 0;
     }
     while(a>0){
         count++;
