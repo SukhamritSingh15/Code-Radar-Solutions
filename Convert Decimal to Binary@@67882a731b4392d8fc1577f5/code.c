@@ -1,21 +1,12 @@
 #include <stdio.h>
 
-void printBinary(int num) {
-    if (num > 1) {
-        printBinary(num / 2);  // Recursive call
+void binary(int num){
+    if(num>1){
+        binary (num/2);
     }
-    printf("%d", num % 2);  // Print the last binary digit
+    printf("%d",num%2);
 }
 
-int main() {
-    int a;
-    scanf("%d", &a);
-
-    if (a == 0) {
-        printf("0");
-    } else {
-        printBinary(a);
-    }
-
+int main(){
     return 0;
 }
