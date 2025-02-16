@@ -12,6 +12,6 @@ int main() {
             printf("Not Prime");
         }
     }
-    printf("Prime");
+        printf("Prime");
     return 0;
 }
