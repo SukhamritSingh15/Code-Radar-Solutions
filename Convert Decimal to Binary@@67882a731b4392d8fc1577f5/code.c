@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    long long int a,binary=0,b=1;
-    scanf("%lld",&a);
+    int a,binary=0,b=1;
+    scanf("%d",&a);
     
     while (a>0){
         int remainder = a%2;
@@ -10,7 +10,7 @@ int main(){
         a /=2;
         b *=10;
     }
-    printf("%llf",binary);
+    printf("%d",binary);
     
     return 0;
 }
