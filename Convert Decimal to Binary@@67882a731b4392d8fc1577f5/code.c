@@ -8,5 +8,13 @@ void binary(int num){
 }
 
 int main(){
+    int a;
+    scanf("%d",&a);
+    if (a==0){
+        printf("0");
+    }
+    else{
+        binary(a);
+    }
     return 0;
 }
