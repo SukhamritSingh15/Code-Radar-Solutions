@@ -4,8 +4,12 @@ int main(){
     int a;
     scanf("%d",&a);
     
-    for(int i =2;i>=0;i--){
-        printf("%d",(a>>i)&1);
+    if (a==0){
+        printf("0");
+    }
+    while(a>0){
+        printf("%d",a%2);
+        a /=2;
     }
     return 0;
 }
