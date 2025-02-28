@@ -10,7 +10,17 @@ int main(){
         for(int k = 1;k<=(2*i-1);k++){
             printf("*");
         }
-        for(i = a-1;i>=1;i--);
+        printf("\n");
+    }
+
+    for(int i = a-i;i>=1;i--){
+        for(int j = 1;j<=a-i;j++){
+            print(" ");
+        }
+        for(int k = 1; k<=(2*i-1)){
+            printf("*");
+        }
+        printf("\n");
     }
     return 0;
 }
