@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Bubble(int arr[],int n){
+void bubbleSort(int arr[],int n){
     int temp;
     for(int i = 0;i<n;i++){
         for(int j = i+1;j<n;j++){
@@ -13,7 +13,7 @@ void Bubble(int arr[],int n){
     }
 }
 
-void printarray(int arr[],int n){
+void printArray(int arr[],int n){
     for(int m = 0;m<n;m++){
         printf("%d ", arr[m]);
     }
