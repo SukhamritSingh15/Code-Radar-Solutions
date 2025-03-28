@@ -6,16 +6,19 @@ void reverse(int arr[],int st,int re){
         arr[j] = temp;
     }
 }
+
 int main(){
     int N;
     scanf("%d",&N);
     int arr[N];
+
     for(int i = 0;i<=N-1;i++){
     scanf("%d",&arr[i]);
-    printf("%d",arr[i]);
     }
+
     int K;
     scanf("%d",&K);
+    K = K%N;
     reverse(arr,0,N-1);
     reverse(arr,0,K-1);
     reverse(arr,K,N-1);
