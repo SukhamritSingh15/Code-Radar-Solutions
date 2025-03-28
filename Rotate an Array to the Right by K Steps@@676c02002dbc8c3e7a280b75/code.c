@@ -1,9 +1,9 @@
 #include <stdio.h>
 int rotate(int arr[],int st,int re){
     for(int i = st,j = re;i<j;i++,j--){
-        int temp = int[i];
-        int[i] = int[j];
-        int[j] = temp;
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
 int main(){
