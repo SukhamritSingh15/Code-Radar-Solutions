@@ -1,11 +1,10 @@
 #include <stdio.h>
 int reverse(int arr[],int st,int re){
-    for(int i = st, j = re;i<j;i++,j--){
+    for(int i = st, j = re; i<j; i++,j--){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-    return;
 }
 int main(){
     int N;
