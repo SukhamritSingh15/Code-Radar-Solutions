@@ -17,7 +17,8 @@ int main(){
             }
         } 
     if(isprime){
-        printf("%d",num);
+        printf("%d ",num);
     }
+    return 0;
     }
 }
