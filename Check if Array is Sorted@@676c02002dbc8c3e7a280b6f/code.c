@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i = 1;i<=N-1;i++){
-        if(arr[N]<arr[N-1]){
+        if(arr[i]<arr[i-1]){
             printf("Not Sorted");
             return 0;
         }
