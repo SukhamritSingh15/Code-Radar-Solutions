@@ -16,11 +16,11 @@ int main(){
                 isprime =0;
                 break;
             }
+        if(isprime){
+            count++;
         } 
-    if(isprime){
-        count++;
-        printf("%d ",count);
     }
+    printf("%d ",count);
     return 0;
     }
 }
