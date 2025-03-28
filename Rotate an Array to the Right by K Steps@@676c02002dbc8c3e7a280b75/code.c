@@ -7,7 +7,7 @@ int reverse(int arr[],int st,int re){
     }
 }
 int main(){
-    int n;
+    int N;
     scanf("%d",&N);
     int arr[N];
     for(int i = 0;i<=N-1;i++){
