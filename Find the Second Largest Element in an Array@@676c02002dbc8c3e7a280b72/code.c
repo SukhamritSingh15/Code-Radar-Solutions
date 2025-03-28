@@ -17,6 +17,11 @@ int main(){
             smax = arr[i];
         }
     }
-    printf("%d",smax);
+    if(smax==INT_MIN){
+        printf("-1\n");
+    }
+    else{
+        printf("%d",smax);
+    }
     return 0;   
 }
