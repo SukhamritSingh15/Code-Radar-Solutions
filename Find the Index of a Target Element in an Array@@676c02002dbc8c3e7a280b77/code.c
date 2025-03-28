@@ -9,7 +9,9 @@ int main(){
     int T;
     scanf("%d",&T);
     for(int i = 0;i<=N-1;i++){
-        printf("%d",T);
+        if(arr[i]==T){
+            printf("%d ",i);
+        }
     }
     return 0;
 }
