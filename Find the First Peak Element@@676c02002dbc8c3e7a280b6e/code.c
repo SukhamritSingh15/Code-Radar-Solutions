@@ -23,7 +23,7 @@ int main(){
         }
     }
     
-    if(arr[N-1] > arr[N-1]){
+    if(arr[N-1] > arr[N-2]){
         printf("%d",N-1);
         return 0;
     }
