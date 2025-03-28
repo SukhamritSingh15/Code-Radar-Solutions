@@ -6,7 +6,7 @@ int main(){
     int count =0;
     int odd=0;
     for(int i = 0;i<=N-1;i++){
-        if(i%2==0){
+        if(arr[i]%2==0){
             count++;
         }
         else{
