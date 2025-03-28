@@ -1,5 +1,5 @@
 #include <stdio.h>
-int palindrome(int arr[],int size,int N){
+int palindrome(int arr[],int N){
     int i = 0;
     int j = N-1;
     while(i<j){
@@ -15,11 +15,10 @@ int main(){
     int N;
     scanf("%d",&N);
     int arr[N];
-    int size = sizeof(arr) / sizeof(arr[0]);
-    for(int i = 0;i<size;i++){
-        scanf("%d",&arr[N]);
+    for(int i = 0;i<N;i++){
+        scanf("%d",&arr[i]);
     }
-    if(palindrome(arr,size)){
+    if(palindrome(arr,N)){
         printf("YES");
     }
     else{
