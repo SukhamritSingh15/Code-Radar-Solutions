@@ -18,8 +18,8 @@ int main(){
             }
         } 
     if(isprime){
-        printf("%d ",num);
         count++;
+        printf("%d ",count);
     }
     return 0;
     }
