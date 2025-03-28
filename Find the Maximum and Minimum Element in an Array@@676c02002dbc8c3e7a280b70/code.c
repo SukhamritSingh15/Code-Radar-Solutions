@@ -11,7 +11,10 @@ int main(){
         if(max<arr[i]){
             max = arr[i];
         }
+        else if(max>arr[i]){
+            max = arr[i];
+        }
     }
-    printf("%d",max);
+    printf("%d %d",max,max);
     return 0;
 }
