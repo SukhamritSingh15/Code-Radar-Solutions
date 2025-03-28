@@ -1,34 +1,36 @@
 #include <stdio.h>
-#include <limits.h>
+
+int findFirstPeak(int arr[], int N) {
+    // If there is only one element, it's a peak
+    if (N == 1) return arr[0];
+
+    // Check the first element
+    if (arr[0] > arr[1]) return arr[0];
+
+    // Check middle elements
+    for (int i = 1; i < N - 1; i++) {
+        if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+            return arr[i]; // First peak found
+        }
+    }
+
+    // Check the last element
+    if (arr[N - 1] > arr[N - 2]) return arr[N - 1];
+
+    return -1; // No peak found
+}
 
 int main() {
     int N;
     scanf("%d", &N);
     int arr[N];
 
-    // Read input
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
 
-    int max = INT_MIN, smax = INT_MIN;
-
-    // Find max and second max
-    for (int i = 0; i < N; i++) {
-        if (arr[i] > max) {
-            smax = max;
-            max = arr[i];
-        } else if (arr[i] > smax && arr[i] != max) {
-            smax = arr[i];
-        }
-    }
-
-    // If no second largest element, return -1
-    if (smax == INT_MIN) {
-        printf("-1\n");
-    } else {
-        printf("%d\n", smax);
-    }
+    int peak = findFirstPeak(arr, N);
+    printf("%d\n", peak);
 
     return 0;
 }
