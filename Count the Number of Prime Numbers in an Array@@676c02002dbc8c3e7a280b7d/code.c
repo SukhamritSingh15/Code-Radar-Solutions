@@ -3,6 +3,7 @@ int main(){
     int N;
     scanf("%d",&N);
     int arr[N];
+    int count = 0;
     for(int i = 0;i<=N-1;i++){
         scanf("%d",&arr[i]);
     }
@@ -18,6 +19,7 @@ int main(){
         } 
     if(isprime){
         printf("%d ",num);
+        count++;
     }
     return 0;
     }
