@@ -1,13 +1,11 @@
 #include<stdio.h>
-int palindrome(int N,int arr[]){
-    int i = 0;
-    int j = N-1;
-    while(i<j){
+int palindrome(int start,int end,int arr[]){
+    while(start<end){
         if(arr[i]!=arr[j]){
             return 0;
         }
-        i++;
-        j--;
+        start++;
+        end--;
     }
     return 1;
 }
@@ -20,8 +18,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i = 0;i<=N-1;i++){
-        for(int j = 0;j<=N-1;j++){
-            if(palindrome(N,arr)){
+        for(int j = i;j<=N-1;j++){
+            if(palindrome(i,j)){
                 count++;
             }
         }
