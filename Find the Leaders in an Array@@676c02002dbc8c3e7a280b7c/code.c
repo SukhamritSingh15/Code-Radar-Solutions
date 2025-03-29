@@ -11,7 +11,7 @@ int main(){
     int max = arr[N-1];
     printf("%d ", max); 
 
-    for(int i = N-2; i >= 0; i--){
+    for(int i = N-2; i <= 0; i--){
         if(arr[i] >= max){
             max = arr[i];
             printf("%d ", arr[i]); 
