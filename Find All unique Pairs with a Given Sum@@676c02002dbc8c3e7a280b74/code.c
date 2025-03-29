@@ -16,6 +16,11 @@ int main(){
             if(arr[i]+arr[j]==T){
                 pairs++;
                 printf("%d %d\n",arr[i] , arr[j]);
+
+                for(int k = j+1;j<=N-1;k++){
+                    if(arr[k] == arr[j]) j++;
+                    else break;
+                }
             }
         }
     }
