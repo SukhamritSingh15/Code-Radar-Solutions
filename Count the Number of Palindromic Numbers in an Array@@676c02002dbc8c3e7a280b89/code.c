@@ -20,7 +20,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i = 0;i<=N-1;i++){
-        for(int j = i+1;j<=N-1;j++){
+        for(int j = 0;j<=N-1;j++){
             if(palindrome(N,arr)){
                 count++;
             }
