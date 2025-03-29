@@ -19,6 +19,5 @@ int main(){
             }
         }
     }
-    printf("%d ",pairs);
     return 0;
 }
