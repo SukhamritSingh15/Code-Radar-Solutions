@@ -11,7 +11,7 @@ int main(){
     }
     for(int i = 0;i<=N-1;i++){
         if(arr[i]%2==0){
-            if(arr[i]>max){
+            if(max==-1||arr[i]>max){
                 max = arr[i];
             }
         }
