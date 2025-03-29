@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
-#include <stdlib.h>  
+#include <stdlib.h>  // For abs()
 
 int main() {
     int N;
@@ -14,7 +14,7 @@ int main() {
     int minDiff = INT_MAX, num1, num2;
 
     for (int i = 0; i < N - 1; i++) {
-        int diff = abs(arr[i + 1] - arr[i]);  
+        int diff = abs(arr[i + 1] - arr[i]);  // Easier way
         if (diff < minDiff) {
             minDiff = diff;
             num1 = arr[i];
@@ -22,6 +22,7 @@ int main() {
         }
     }
 
-    printf("%d %d\n", num1, num2);
+    printf("%d %d\n", num1 > num2 ? num1 : num2, num1 > num2 ? num2 : num1);
+    
     return 0;
 }
