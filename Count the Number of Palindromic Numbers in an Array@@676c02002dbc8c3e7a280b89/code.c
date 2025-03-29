@@ -1,5 +1,5 @@
 #include<stdio.h>
-int palindrome(int start,int end,int arr[]){
+int palindrome(int arr[]int start,int end){
     while(start<end){
         if(arr[start]!=arr[end]){
             return 0;
