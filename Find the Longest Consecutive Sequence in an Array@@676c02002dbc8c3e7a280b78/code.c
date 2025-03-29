@@ -17,7 +17,7 @@ int main(){
     }
     int count = 1,longest = 1;
 
-    for(int i = 0;i<=N-1;i++){
+    for(int i = 1;i<=N-1;i++){
         if(arr[i] == arr[i-1]+1){
             count++;
         }
