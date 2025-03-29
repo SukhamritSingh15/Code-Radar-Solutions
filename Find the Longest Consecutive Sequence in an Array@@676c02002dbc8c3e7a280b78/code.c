@@ -23,7 +23,7 @@ int main(){
         }
         else if(arr[i] !=arr[i-1]){
             if(count>longest) longest = count;
-            count = 1
+            count = 1;
         }
     }
     if(count>longest) longest = count;
