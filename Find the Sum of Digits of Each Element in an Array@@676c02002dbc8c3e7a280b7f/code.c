@@ -4,11 +4,12 @@ int main(){
     scanf("%d",&N);
     int arr[N];
     int sum = 0;
-    int num = arr[i];
+
     for(int i = 0;i<=N-1;i++){
         scanf("%d",arr[i]);
     }
     for(int i = 0;i<=N-1;i++){
+        int num = arr[i];
         while(num>0){
             sum += num%10;
             num/=10;
