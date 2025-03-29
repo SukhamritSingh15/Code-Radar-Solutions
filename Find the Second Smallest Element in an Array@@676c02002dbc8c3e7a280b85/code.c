@@ -3,8 +3,8 @@
 int main(){
     int N;
     scanf("%d",&N);
-    int max = INT_MIN;
-    int smax = INT_MIN;
+    int max = INT_MAX;
+    int smax = INT_MAX;
     int arr[N];
 
     for(int i = 0;i<=N-1;i++){
@@ -12,12 +12,12 @@ int main(){
     }
 
     for(int i = 0;i<=N-1;i++){
-        if(arr[i]>max){
+        if(arr[i]<max){
             max =arr[i];
         }
     }
     for(int i = 0;i<=N-1;i++){
-        if(arr[i]>smax && arr[i]!=max){
+        if(arr[i]<smax && arr[i]!=max){
             smax = arr[i];
         }
     }
