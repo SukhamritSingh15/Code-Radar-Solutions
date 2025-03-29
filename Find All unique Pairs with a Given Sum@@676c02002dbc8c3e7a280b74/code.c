@@ -18,7 +18,7 @@ int main(){
                 printf("%d %d\n",arr[i] , arr[j]);
 
                 for(int k = j+1;k<=N-1;k++){
-                    if(arr[k] == arr[j]) j++;
+                    if(arr[j] == arr[k]) j++;
                     else break;
                 }
             }
