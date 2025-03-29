@@ -1,7 +1,7 @@
 #include<stdio.h>
 int palindrome(int start,int end,int arr[]){
     while(start<end){
-        if(arr[i]!=arr[j]){
+        if(arr[start]!=arr[end]){
             return 0;
         }
         start++;
