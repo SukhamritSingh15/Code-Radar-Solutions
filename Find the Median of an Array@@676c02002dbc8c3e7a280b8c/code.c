@@ -19,7 +19,7 @@ int main(){
         printf("%d",arr[N/2]);
     }
     else{
-        double median = (arr[N/2] + arr[(N/2)-1])+/2.0;
+        double median = (arr[N/2] + arr[(N/2)-1])/2.0;
         printf("%d",median);
     }
     return 0;
