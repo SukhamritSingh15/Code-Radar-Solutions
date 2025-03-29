@@ -6,7 +6,7 @@ int main(){
     for(int i = 0;i<=N-1;i++){
         scanf("%d",&arr[N]);
     }
-    int max1 = -1000000; max2 = 1000000;
+    int max1 = -1000000; max2 = -1000000;
     for(int i = 0;i<=N-1;i++){
         if(arr[i]>max1){
             max2 = max1;
@@ -16,7 +16,7 @@ int main(){
             max2 = arr[i];
         }
     }
-    printf("%d",max1*max2);
+    printf("%d ",max1*max2);
     return 0;
 
 }
