@@ -16,13 +16,12 @@ int main(){
             if(arr[i] + arr[j] == T){
                 printf("%d %d\n", arr[i], arr[j]);
 
-                // Skip all further occurrences of arr[j]
                 while(j + 1 < N && arr[j] == arr[j + 1]){
                     j++;
                 }
             }
         }
-        // Skip all further occurrences of arr[i]
+
         while(i + 1 < N && arr[i] == arr[i + 1]){
             i++;
         }
