@@ -11,10 +11,10 @@ int main(){
         for(int j = 0;j<=N-1;j++){
             if(arr[i]==arr[j]){
                 count++;
+            }
         }
     }
-        }
-    }
+    
     printf("%d",count);
     
 
