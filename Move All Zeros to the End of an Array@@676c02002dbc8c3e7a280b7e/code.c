@@ -11,6 +11,6 @@ int main(){
             arr[i] == arr[N-1];
         }
     }
-    printf("%d ",arr[i]);
+    printf("%d ",arr[N]);
     return 0;
 }
