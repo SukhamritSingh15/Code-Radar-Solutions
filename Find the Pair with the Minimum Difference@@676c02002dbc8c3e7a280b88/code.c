@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
-#include <stdlib.h>  
 
 int main() {
     int N;
@@ -11,10 +9,23 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int minDiff = INT_MAX, num1, num2;
-
+    // Sorting the array (Bubble Sort for simplicity)
     for (int i = 0; i < N - 1; i++) {
-        int diff = abs(arr[i + 1] - arr[i]); 
+        for (int j = i + 1; j < N; j++) {
+            if (arr[i] > arr[j]) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    // Finding the pair with the minimum difference
+    int minDiff = arr[1] - arr[0];
+    int num1 = arr[0], num2 = arr[1];
+
+    for (int i = 1; i < N - 1; i++) {
+        int diff = arr[i + 1] - arr[i];
         if (diff < minDiff) {
             minDiff = diff;
             num1 = arr[i];
@@ -22,7 +33,8 @@ int main() {
         }
     }
 
-    printf("%d %d\n", num1 < num2 ? num1 : num2, num1 < num2 ? num2 : num1);
+    // Printing the result
+    printf("%d %d\n", num1, num2);
     
     return 0;
 }
