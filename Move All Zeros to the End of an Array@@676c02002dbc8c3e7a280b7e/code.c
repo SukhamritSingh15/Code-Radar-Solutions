@@ -12,11 +12,11 @@ int main(){
             arr[index++] = arr[i];
         }
     }
-    while(arr<N){
+    while(index<N){
         arr[index++] = 0;
     }
     for(int i =0;i<=N-1;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     return 0;
 }
