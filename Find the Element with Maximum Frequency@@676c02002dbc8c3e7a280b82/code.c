@@ -1,23 +1,29 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int N;
-    scanf("%d",&N);
+    scanf("%d", &N);
     int arr[N];
-    for(int i = 0;i<=N-1;i++){
-        scanf("%d",&arr[i]);
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
     }
-    for(int i = 0;i<=N-1;i++){
-        int count =0;
-        for(int j = 0;j<=N-1;j++){
-            if(arr[i] ==arr[j]){
+
+    int maxCount = 0, maxElement;
+
+    for (int i = 0; i < N; i++) {
+        int count = 0;
+        for (int j = 0; j < N; j++) {
+            if (arr[i] == arr[j]) {
                 count++;
             }
         }
-        if(count>N/2){
-            printf("%d",arr[i]);
-            return 0;
+        if (count > maxCount) {
+            maxCount = count;
+            maxElement = arr[i];
         }
     }
 
+    printf("%d", maxElement);
     return 0;
 }
