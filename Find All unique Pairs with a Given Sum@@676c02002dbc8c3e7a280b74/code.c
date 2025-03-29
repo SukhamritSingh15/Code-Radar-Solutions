@@ -17,7 +17,7 @@ int main(){
                 pairs++;
                 printf("%d %d\n",arr[i] , arr[j]);
 
-                for(int k = j+1;j<=N-1;k++){
+                for(int k = j+1;k<=N-1;k++){
                     if(arr[k] == arr[j]) j++;
                     else break;
                 }
